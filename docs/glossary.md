@@ -10,7 +10,7 @@ Consummer IoT
 Health IoT
 
 ## IoMT
-
+Internet of Medical Things
 
 ## IIoT
 
