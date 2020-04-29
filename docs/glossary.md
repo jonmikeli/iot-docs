@@ -1,10 +1,16 @@
 # Glossary
 
+## IoT
+Internet of Objects
+
 ## CIoT
+Consummer IoT
 
 ## HIoT
+Health IoT
 
 ## IoMT
+
 
 ## IIoT
 
