@@ -44,8 +44,6 @@
         "userId": {
             "$id": "#/properties/userId",
             "type": "string",
-            "title": "The Userid Schema",
-            "description": "An explanation about the purpose of this instance.",
             "default": "",
             "examples": [
                 ""
@@ -54,8 +52,6 @@
         "building": {
             "$id": "#/properties/building",
             "type": "object",
-            "title": "The Building Schema",
-            "description": "An explanation about the purpose of this instance.",
             "default": {},
             "examples": [
                 {
@@ -76,8 +72,6 @@
                 "buildingId": {
                     "$id": "#/properties/building/properties/buildingId",
                     "type": "string",
-                    "title": "The Buildingid Schema",
-                    "description": "An explanation about the purpose of this instance.",
                     "default": "",
                     "examples": [
                         ""
@@ -86,8 +80,6 @@
                 "floor": {
                     "$id": "#/properties/building/properties/floor",
                     "type": "string",
-                    "title": "The Floor Schema",
-                    "description": "An explanation about the purpose of this instance.",
                     "default": "",
                     "examples": [
                         ""
@@ -96,8 +88,6 @@
                 "departmentId": {
                     "$id": "#/properties/building/properties/departmentId",
                     "type": "string",
-                    "title": "The Departmentid Schema",
-                    "description": "An explanation about the purpose of this instance.",
                     "default": "",
                     "examples": [
                         ""
@@ -106,8 +96,6 @@
                 "roomId": {
                     "$id": "#/properties/building/properties/roomId",
                     "type": "null",
-                    "title": "The Roomid Schema",
-                    "description": "An explanation about the purpose of this instance.",
                     "default": null,
                     "examples": [
                         null
