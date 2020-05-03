@@ -1,0 +1,137 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "#/schemas/measureddataschema",
+    "type": "object",
+    "title": "Measured data message type schema",
+    "description": "Proposal of a generic type of schema.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "deviceId",
+        "moduleId",
+        "messageType",
+        "timestamp",
+        "data"
+    ],
+    "properties": {
+        "deviceId": {
+            "$id": "#/properties/deviceId",
+            "type": "string",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "moduleId": {
+            "$id": "#/properties/moduleId",
+            "type": "string",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "messageType": {
+            "$id": "#/properties/messageType",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "data"
+            ]
+        },
+        "timestamp": {
+            "$id": "#/properties/timestamp",
+            "type": "integer"
+        },              
+        "data": {
+            "$id": "#/properties/data",
+            "type": "array",        
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "propertyValue": 35.0,
+                        "propertyDivFactor": 1.0,
+                        "timestamp": 0,
+                        "propertyName": "P1",
+                        "propertyUnit": "T"
+                    },
+                    {
+                        "propertyName": "P2",
+                        "propertyUnit": "U",
+                        "propertyValue": 1566.0,
+                        "propertyDivFactor": 10.0,
+                        "timestamp": 0
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/data/items",
+                "type": "object",
+                "default": {},
+                "examples": [
+                    {
+                        "propertyUnit": "T",
+                        "propertyValue": 35.0,
+                        "propertyDivFactor": 1.0,
+                        "timestamp": 0,
+                        "propertyName": "P1"
+                    },
+                    {
+                        "propertyName": "P2",
+                        "propertyUnit": "U",
+                        "propertyValue": 1566.0,
+                        "propertyDivFactor": 10.0,
+                        "timestamp": 0
+                    }
+                ],
+                "additionalProperties": true,
+                "required": [
+                    "timestamp",
+                    "propertyName",
+                    "propertyValue",
+                    "propertyUnit",
+                    "propertyDivFactor"
+                ],
+                "properties": {
+                    "timestamp": {
+                        "$id": "#/properties/data/items/properties/timestamp",
+                        "type": "integer"
+                    },
+                    "propertyName": {
+                        "$id": "#/properties/data/items/properties/propertyName",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "P1"
+                        ]
+                    },
+                    "propertyValue": {
+                        "$id": "#/properties/data/items/properties/propertyValue",
+                        "type": "number",
+                        "default": 0,
+                        "examples": [
+                            35.0
+                        ]
+                    },
+                    "propertyUnit": {
+                        "$id": "#/properties/data/items/properties/propertyUnit",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "T"
+                        ]
+                    },
+                    "propertyDivFactor": {
+                        "$id": "#/properties/data/items/properties/propertyDivFactor",
+                        "type": "integer",
+                        "default": 0,
+                        "examples": [
+                            1.0
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
