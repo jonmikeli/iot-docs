@@ -1,9 +1,9 @@
 ﻿{
   "messageType": "data",
-  "timestamp": 13456, //message creation setting,
-  "deviceId": "ID1", //device Id, (Gateway Id in case of IDs)
-  "sensorId": "", //actual device Id, in case of gateway uses
-  "schemaVersion": "v1.0", //message's schema version
+  "timestamp": 13456, 
+  "deviceId": "ID1", 
+  "sensorId": "", 
+  "schemaVersion": "v1.0", 
   "temperature":15.00,
   "power":590,
   "humidity":60.49
