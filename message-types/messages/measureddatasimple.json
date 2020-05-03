@@ -1,10 +1,10 @@
 ﻿{
-  "messageType": "data",
-  "timestamp": 13456, 
   "deviceId": "ID1", 
-  "sensorId": "", 
+  "moduleId": "", 
+  "messageType": "data",
+  "timestamp": 13456,   
   "schemaVersion": "v1.0", 
   "temperature":15.00,
-  "power":590,
+  "batteryVoltage":590,
   "humidity":60.49
 }

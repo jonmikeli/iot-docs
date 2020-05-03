@@ -2,8 +2,8 @@
   "deviceId": "",
   "moduleId": "",
   "timestamp": 0,
-  "schemaVersion": "v1.0",
   "messageType": "data",
+  "schemaVersion": "v1.0",
   "data": [
     {
       "timestamp": 0,
