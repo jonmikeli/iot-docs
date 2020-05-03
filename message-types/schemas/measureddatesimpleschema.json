@@ -26,8 +26,6 @@
         "moduleId": {
             "$id": "#/properties/moduleId",
             "type": "string",
-            "title": "The Moduleid Schema",
-            "description": "An explanation about the purpose of this instance.",
             "default": "",
             "examples": [
                 ""
@@ -36,8 +34,6 @@
         "messageType": {
             "$id": "#/properties/messageType",
             "type": "string",
-            "title": "The Messagetype Schema",
-            "description": "An explanation about the purpose of this instance.",
             "default": "",
             "examples": [
                 "data"
