@@ -1,0 +1,71 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "#/schemas/errorschema",
+    "type": "object",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "deviceId",
+        "moduleId",
+        "messageType",
+        "errorCode",
+        "errorSeverity",
+        "errorStatus",
+        "timestamp"
+    ],
+    "properties": {
+        "deviceId": {
+            "$id": "#/properties/deviceId",
+            "type": "string",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "moduleId": {
+            "$id": "#/properties/moduleId",
+            "type": "string",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "messageType": {
+            "$id": "#/properties/messageType",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "error"
+            ]
+        },
+        "errorCode": {
+            "$id": "#/properties/errorCode",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "code"
+            ]
+        },
+        "errorSeverity": {
+            "$id": "#/properties/errorSeverity",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "severity"
+            ]
+        },
+        "errorStatus": {
+            "$id": "#/properties/errorStatus",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "status"
+            ]
+        },
+        "errorDate": {
+            "$id": "#/properties/timestamp",
+            "type": "string",
+            "format": "date-tilme"
+        }
+    }
+}
