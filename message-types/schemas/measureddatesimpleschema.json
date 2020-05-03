@@ -1,0 +1,76 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "#/schemas/measureddatasimpleschema",
+    "type": "object",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "deviceId",
+        "moduleId",
+        "messageType",
+        "messageDate",
+        "schemaVersion",
+        "temperature",
+        "batteryVoltage",
+        "humidity"
+    ],
+    "properties": {
+        "deviceId": {
+            "$id": "#/properties/deviceId",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "ID1"
+            ]
+        },
+        "moduleId": {
+            "$id": "#/properties/moduleId",
+            "type": "string",
+            "title": "The Moduleid Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "messageType": {
+            "$id": "#/properties/messageType",
+            "type": "string",
+            "title": "The Messagetype Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "data"
+            ]
+        },
+        "messageDate": {
+            "$id": "#/properties/messagedate",
+            "type": "string",
+            "format": "date-time"
+        },
+        "temperature": {
+            "$id": "#/properties/temperature",
+            "type": "number",
+            "default": 0,
+            "examples": [
+                15.0
+            ]
+        },
+        "batteryVoltage": {
+            "$id": "#/properties/batteryVoltage",
+            "type": "number",
+            "default": 0,
+            "examples": [
+                590.0
+            ]
+        },
+        "humidity": {
+            "$id": "#/properties/humidity",
+            "type": "number",
+            "default": 0,
+            "examples": [
+                60.49
+            ]
+        }
+    }
+}
